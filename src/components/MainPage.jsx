@@ -10,6 +10,7 @@ import youtubeIcon from '../images/youtube.png'
 import linkedinIcon from '../images/linkedin.png'
 import instagramIcon from '../images/instagram.png'
 import facebookIcon from '../images/facebook.png'
+import Background from './Background'
 
 
 export default function MainPage() {
@@ -28,8 +29,8 @@ export default function MainPage() {
     }, []);
     return (
         <div id='mainPage'>
+            <Background />
             <div id="mpSection1" className='df-col'>
-                <div id="mainPageBG"><div className="gs"></div></div>
                 <div id="mpS1Heading">
                     1ST INTERNATIONAL CONFERENCE<br />ON<br />INNOVATIONS IN MECHANICAL AND COMPUTING TECHNOLOGIES<br />FOR SUSTAINABLE FUTURE<br />(IMCTSF 2024)
                     <div>

@@ -1,0 +1,122 @@
+#cpSection1 {
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    color: white;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#cpHeading {
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+
+#cpS1Con {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #FF2F2F;
+    gap: 10px;
+    width: fit-content;
+}
+
+#cpS1Con span {
+    font-size: 1.563rem;
+    color: white;
+    font-weight: 400;
+    width: 68.75rem;
+    text-align: center;
+}
+
+#cpSection2 {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.cpCardHolder {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 4.375rem 1.25rem;
+}
+
+.cpCard:nth-child(1) {
+    grid-column: 1 / span 2;
+}
+
+.cpCard {
+    gap: 1.563rem;
+    border: 2px solid white;
+    height: 31.25rem;
+    backdrop-filter: blur(5px);
+    width: 44.5vw;
+}
+
+.cpCard:nth-child(1) {
+    width: 90vw;
+}
+
+.cpCardLeft {
+    font-size: 1.875rem;
+    text-align: right;
+}
+
+.cpCard hr {
+    height: 12.5rem;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.cpCard:nth-child(5) hr {
+    height: 18.75rem;
+}
+
+.cpCard:nth-child(6) hr {
+    height: 25rem;
+}
+
+.cpCardRight {
+    gap: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.cpCardName {
+    font-size: 1.563rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 916px) {
+    .cpCardHolder{
+        grid-template-columns: auto;
+    }
+    #cpHeading {
+        font-size: clamp(40px, 6.5vw, 60px);
+        font-weight: 800;
+        text-align: center;
+    }
+    .cpCard:nth-child(1) {
+        grid-column: 1 / 1;
+    }    
+    .cpCard {
+        width: 90vw;
+    }
+    .cpS1Con{
+        width: 100px;
+    }
+    #cpS1Con span {
+        font-size: clamp(17px, 2.5vw, 25px);
+        width: 90vw;
+    }
+    .cpCard {
+        height: 40.25rem;
+        padding:10px;
+    }
+}
