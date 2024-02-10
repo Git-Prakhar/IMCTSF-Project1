@@ -1,0 +1,60 @@
+#rp {
+    background-color: rgb(35, 35, 35);
+    height: 100vh;
+}
+
+#rpCon {
+    margin-top: 250px;
+    color: white;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+#rpCon hr {
+    height: 400px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#rpCon ul {
+    align-items: start;
+    list-style: disc;
+    font-size: 25px;
+    width: 50vw;
+    gap: 50px;
+    font-weight: 300;
+}
+
+#rpRight {
+    gap: 50px;
+}
+
+#rpRight img {
+    width: 200px;
+    height: 200px;
+}
+
+#rpRight a {
+    color: white;
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 916px) {
+    #rp{
+        height: fit-content;
+    }
+    #rpCon{
+        margin-top: 140px;
+        flex-direction: column-reverse;
+    }
+    #rpCon hr{
+        height: 1px;
+        width: 80vw;
+    }
+    #rpLeft ul{
+        font-size: clamp(20px, 2.7vw, 25px);
+        text-align: center;
+    }
+
+}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './css/navbar.css'
-import dropdownImg from '../images/down-arrow.png'
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -36,13 +35,13 @@ export default function Navbar() {
                             {
                                 navbarDropdown && <div id='navMobileDropdown'>
                                     <div id="navBtnHolder">
-                                        <ul className='df-col' id='navBtns'>
+                                        <ul className='df-col' id='navMobileBtns'>
                                             <li><Link onClick={toggleNavbar} to='/'>About Us</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/committee'>Committee</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Keynote Speaker</Link></li>
                                             <li><Link onClick={toggleNavbar} to="/call-for-papers">Call for Papers</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Gallery</Link></li>
-                                            <li><Link onClick={toggleNavbar} to='/'>Registration</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/register'>Registration</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Confrence Programme</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Contact Us</Link></li>
                                         </ul>
@@ -61,7 +60,7 @@ export default function Navbar() {
                                         <li><Link to='/'>Keynote Speaker</Link></li>
                                         <li><Link to="/call-for-papers">Call for Papers</Link></li>
                                         <li><Link to='/'>Gallery</Link></li>
-                                        <li><Link to='/'>Registration</Link></li>
+                                        <li><Link to='/register'>Registration</Link></li>
                                         <li><Link to='/'>Confrence Programme</Link></li>
                                         <li><Link to='/'>Contact Us</Link></li>
                                     </ul>

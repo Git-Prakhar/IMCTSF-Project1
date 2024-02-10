@@ -80,7 +80,7 @@
 }
 
 #navbarMobile {
-    height: 50px;
+    height: 40px;
     justify-content: space-around;
     position: absolute;
     z-index: 99;
@@ -96,10 +96,10 @@
 }
 
 #navMobileBtn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-image: url('/src/images/icons8-menu-50.png');
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -107,7 +107,7 @@
 
 #navMobileDropdown {
     position: absolute;
-    top: 50px;
+    top: 40px;
     width: 100%;
     animation: cfpDrowndownAnim 0.3s forwards;
 }
@@ -124,4 +124,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#navMobileBtns a{
+    font-size: 18px;
+    color:black;
 }

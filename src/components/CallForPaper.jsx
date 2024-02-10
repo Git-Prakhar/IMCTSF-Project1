@@ -11,6 +11,7 @@ import cryptoIcon from '../images/icons8-crypto-90.png';
 import educationIcon from '../images/icons8-education-90.png';
 
 export default function CallForPaper() {
+    document.title = 'IMCTSF - Call For Papers'
     return (
         <div id='cfp'>
             <Background />
