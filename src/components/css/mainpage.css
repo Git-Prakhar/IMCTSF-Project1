@@ -1,0 +1,254 @@
+#mpSection1 {
+    z-index: 3;
+    height: 100vh;
+    gap: 20px;
+}
+
+#mainPageBG {
+    height: 100vh;
+    background: url('/src/images/AIRT1.jpg') center/cover;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.gs {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#mpS1Heading {
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 1.875rem;
+    text-align: center;
+    line-height: 3.125rem;
+    margin-top: 150px;
+}
+
+#mpS1Heading div {
+    font-size: 1.25rem;
+}
+
+#mpS1TimeLocation {
+    position: relative;
+    z-index: 2;
+    color: white;
+    gap: 300px;
+}
+
+.time-location {
+    gap: 10px;
+}
+
+.time-location .icon {
+    object-fit: contain;
+    object-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.time-location .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#mpSection2 {
+    width: 100%;
+    background-color: white;
+}
+
+#mpS2Top {
+    padding: 80px 0px;
+    background-color: #FF2F2F;
+    color: white;
+}
+
+#mpS2Top ul {
+    gap: 2rem;
+}
+
+.mpS2TopDate {
+    font-size: clamp(20px, 1.8vw, 28px);
+    font-weight: 600;
+}
+
+.mpS2TopMessage {
+    font-weight: 400;
+    font-size: clamp(10px, 1.1vw, 18px);
+}
+
+#mpS2Main {
+    margin-top: 15px;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+#mpS2MainHeadingTop {
+    font-size: 20px;
+    color: #FF2F2F;
+}
+
+#mpS2MainHeading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(39, 39, 39);
+}
+
+#mpS2MainCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#mpS2MainConLeft {
+    width: 46.875rem;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: rgb(103, 103, 103);
+    padding: 10px;
+}
+
+#mpS2MainConRight {
+    height: 20rem;
+    width: 25.625rem;
+    object-fit: cover;
+    border: 0.125rem solid black;
+    box-shadow: 0px 0px 0.625rem black;
+}
+
+#mpS2MainTimeLocation {
+    gap: 18.75rem;
+}
+
+.mpS2MainTimeLocationCard {
+    gap: 0.313rem;
+    text-align: center;
+}
+
+.mpS2MainTimeLocationCard .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+.mpS2MainTimeLocationCard strong {
+    font-size: 18px;
+}
+
+#mpS2Note {
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+    align-self: flex-start;
+    position: relative;
+    left: 15vw;
+}
+
+#mpFooter {
+    height: 150px;
+    background-image: url('/src/images/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: 1500px 700px;
+    background-color: #3F3836;
+    gap: 20px;
+}
+
+#mpFooter hr {
+    width: 62.5rem;
+    border-color: #b4b4b4;
+}
+
+#mpSocials {
+    gap: 0.625rem;
+}
+
+#mpSocials .mpSocial {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-size: 1.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #211e1e;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#mpSocials .mpSocial:hover {
+    background-color: #FF2F2F;
+}
+
+#mpFooter #footercon {
+    gap: 31.25rem;
+    color: white;
+}
+
+@media screen and (max-width: 916px) {
+    .mpS2TopDate {
+        font-size: 2rem;
+    }
+
+    .mpS2TopMessage {
+        font-size: 1rem;
+    }
+
+    #mpS1TimeLocation {
+        gap:clamp(20px, 5vw, 100px);
+    }
+
+    #mpS2Top {
+        padding: 60px 0px;
+    }
+
+    #mpS2Top ul {
+        gap: 3rem;
+    }
+
+    #mpS2MainCon {
+        flex-direction: column;
+    }
+
+    #mpFooter hr {
+        width: 70vw;
+    }
+
+    #mpFooter #footercon {
+        gap: 3.25rem;
+        color: white;
+    }
+
+    #mpS2MainTimeLocation {
+        gap: 1.75rem;
+        flex-direction: column;
+    }
+
+    #mpS2MainHeading {
+        font-size: clamp(16px, 3vw, 40px);
+    }
+
+    #mpS2MainConLeft {
+        width: 90vw;
+        font-size: clamp(10px, 3vw, 20px);
+    }
+
+    #mpS2Note{
+        left:2rem;
+        font-size: clamp(10px, 2vw, 16px);
+        width: 90vw;
+    }
+    .time-location .text {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }    
+}

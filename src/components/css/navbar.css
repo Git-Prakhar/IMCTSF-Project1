@@ -1,0 +1,158 @@
+#navbar {
+    height: 10.625rem;
+    top: 3.125rem;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+#navbarCon {
+    height: 100%;
+    width: 75rem;
+    background-color: white;
+    gap: 1.875rem;
+    border-left: 0.625rem solid red;
+    border-right: 0.625rem solid red;
+}
+
+#navSponsorImg {
+    height: 40%;
+    width: 95%;
+    background-color: white;
+}
+
+#navBtnsHolder {
+    color: white;
+}
+
+#navBtns {
+    gap: 1.25rem;
+}
+
+#navBtns li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBtns li::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 35px;
+    background: url('/src/images/arrow-up.png') center/contain;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+#navBtns li:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#navBtns li a {
+    color: rgb(67, 67, 67);
+    font-size: 1.125rem;
+}
+
+#cfpDropdown {
+    position: absolute;
+    background-color: white;
+    padding: 1.25rem 0.625rem;
+    width: 12.5rem;
+    top: 3rem;
+    display: none;
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px black;
+    z-index: 1;
+}
+
+#cfpBtn:hover #cfpDropdown {
+    display: block;
+    animation: cfpDrowndownAnim 0.3s forwards;
+}
+
+#cfpDropdown:hover > a {
+    color: red;
+}
+
+@keyframes cfpDrowndownAnim {
+    from {
+        opacity: 0;
+        transform: translateY(-0.625rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#cfpBtn:hover #downarrow {
+    rotate: 180deg;
+}
+
+#cfpBtn {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#downarrow {
+    height: 0.625rem;
+    width: 0.625rem;
+    object-fit: contain;
+    object-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+#navbarMobile {
+    height: 50px;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+#navMobileSponsorImg {
+    height: 98%;
+    width: 90%;
+    background-color: white;
+}
+
+#navMobileBtn {
+    width: 50px;
+    height: 50px;
+    background-image: url('/src/images/icons8-menu-50.png');
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#navMobileDropdown {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    animation: cfpDrowndownAnim 0.3s forwards;
+}
+
+
+#navMobileDropdown #navBtns {
+    gap: 0px;
+}
+
+#navMobileDropdown li {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
