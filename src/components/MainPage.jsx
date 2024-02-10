@@ -16,6 +16,8 @@ import Background from './Background'
 export default function MainPage() {
     const [mobile, setMobile] = useState(false);
 
+    document.title = 'IMCTSF - 2024'
+
     useEffect(() => {
         function handleResize() {
             setMobile(window.innerWidth <= 916);

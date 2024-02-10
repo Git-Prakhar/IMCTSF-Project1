@@ -40,7 +40,7 @@ export default function Navbar() {
                                             <li><Link onClick={toggleNavbar} to='/'>About Us</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/committee'>Committee</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Keynote Speaker</Link></li>
-                                            <li><Link onClick={toggleNavbar} to="/">Call for Papers</Link></li>
+                                            <li><Link onClick={toggleNavbar} to="/call-for-papers">Call for Papers</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Gallery</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Registration</Link></li>
                                             <li><Link onClick={toggleNavbar} to='/'>Confrence Programme</Link></li>
@@ -59,14 +59,7 @@ export default function Navbar() {
                                         <li><Link to='/'>About Us</Link></li>
                                         <li><Link to='/committee'>Committee</Link></li>
                                         <li><Link to='/'>Keynote Speaker</Link></li>
-                                        <li>
-                                            <div id='cfpBtn'>
-                                                <Link to="/">Call for Papers <img src={dropdownImg} alt="" id='downarrow' /></Link>
-                                                <div id='cfpDropdown'>
-                                                    <Link to="/" style={{ fontSize: '16px' }}>Submission Rules</Link>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        <li><Link to="/call-for-papers">Call for Papers</Link></li>
                                         <li><Link to='/'>Gallery</Link></li>
                                         <li><Link to='/'>Registration</Link></li>
                                         <li><Link to='/'>Confrence Programme</Link></li>

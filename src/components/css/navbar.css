@@ -58,27 +58,6 @@
     font-size: 1.125rem;
 }
 
-#cfpDropdown {
-    position: absolute;
-    background-color: white;
-    padding: 1.25rem 0.625rem;
-    width: 12.5rem;
-    top: 3rem;
-    display: none;
-    transition: 0.3s;
-    box-shadow: 0px 0px 2px black;
-    z-index: 1;
-}
-
-#cfpBtn:hover #cfpDropdown {
-    display: block;
-    animation: cfpDrowndownAnim 0.3s forwards;
-}
-
-#cfpDropdown:hover > a {
-    color: red;
-}
-
 @keyframes cfpDrowndownAnim {
     from {
         opacity: 0;
@@ -89,16 +68,6 @@
         opacity: 1;
         transform: translateY(0px);
     }
-}
-
-#cfpBtn:hover #downarrow {
-    rotate: 180deg;
-}
-
-#cfpBtn {
-    height: 3rem;
-    display: flex;
-    align-items: center;
 }
 
 #downarrow {
