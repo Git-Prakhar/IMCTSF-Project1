@@ -37,16 +37,14 @@ export default function Navbar() {
                                 navbarDropdown && <div id='navMobileDropdown'>
                                     <div id="navBtnHolder">
                                         <ul className='df-col' id='navBtns'>
-                                            <li><Link to='/'>About Us</Link></li>
-                                            <li><Link to='/'>Committee</Link></li>
-                                            <li><Link to='/'>Keynote Speaker</Link></li>
-                                            <li>
-                                                <Link to="/">Call for Papers</Link>
-                                            </li>
-                                            <li><Link to='/'>Gallery</Link></li>
-                                            <li><Link to='/'>Registration</Link></li>
-                                            <li><Link to='/'>Confrence Programme</Link></li>
-                                            <li><Link to='/'>Contact Us</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/'>About Us</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/committee'>Committee</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/'>Keynote Speaker</Link></li>
+                                            <li><Link onClick={toggleNavbar} to="/">Call for Papers</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/'>Gallery</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/'>Registration</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/'>Confrence Programme</Link></li>
+                                            <li><Link onClick={toggleNavbar} to='/'>Contact Us</Link></li>
                                         </ul>
                                     </div>
                                 </div>
