@@ -205,7 +205,8 @@
     }
 
     #mpS1TimeLocation {
-        gap:clamp(20px, 5vw, 100px);
+        flex-direction: column;
+        gap:30px;
     }
 
     #mpS2Top {
@@ -251,5 +252,14 @@
     .time-location .text {
         font-size: 1.4rem;
         font-weight: 600;
-    }    
+    }
+    .time-location{
+        flex-direction: column;
+    }
+    #mpS1Heading{
+        margin-top: 40px;
+    }
+    #mpSection1{
+        gap:50px;
+    }
 }
